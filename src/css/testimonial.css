@@ -1,0 +1,11 @@
+
+
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 100%;
+    width: 100%;
+}

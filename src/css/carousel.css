@@ -1,0 +1,36 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.item {
+    height: 320px;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 70%;
+    }
+  }

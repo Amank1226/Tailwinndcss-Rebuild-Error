@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman's Den - Home</title>
+    <meta name="description"
+        content="Aman's Den is a web design and graphic design agency that offers a range of services to help businesses build their online presence. Contact us today to learn more." />
+    <meta name="keywords"
+        content="web design, graphic design, website development, web development, digital marketing" />
+    <!-- -------------------------------------------------------------------------------- Style Sheets And JavaScripts --------------------------------------------------------------------------------- -->
+    <!--? Include the Tailwind CSS | Style CSS-->
+    <link rel="stylesheet" type="text/css" href="/src/css/input.css" />
+    <!-- Here is the output file -->
+    <link rel="stylesheet" href="/src/css/light.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/testimonial.css" />
+    <!-- https://codepen.io/ahmadnasr/pen/KKpvNGY -->
+
+    <!--? Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/CSS/carousel.css" />
+
+    <!--? ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--? ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!--? Scripts -->
+    <script src="/src/JS/main.js"></script>
+    <script src="/src/JS/theme-switcher.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- --------------------------------------------------------------------------------------------- -- ---------------------------------------------------------------------------------------------- -->
+</head>
+
+<body class="w-full light-theme" id="theme-change-section bg-cover">
+    <!-- ------------------------------------------------------------------------------------------- Nav Bar ------------------------------------------------------------------------------------------- -->
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 justify-between">
+                <div class="flex flex-shrink-0 items-center">
+                    <a href="#" class="text-2xl font-bold text-white">Aman's Den</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 mt-3 flex items-center space-x-4">
+                        <a href="#"
+                            class="ransition rounded-md px-3 py-2 text-sm font-medium text-gray-300 duration-150 ease-in-out hover:bg-gray-700 hover:text-white">Home</a>
+                        <a href="#"
+                            class="ransition rounded-md px-3 py-2 text-sm font-medium text-gray-300 duration-150 ease-in-out hover:bg-gray-700 hover:text-white">About</a>
+                        <a href="#"
+                            class="ransition rounded-md px-3 py-2 text-sm font-medium text-gray-300 duration-150 ease-in-out hover:bg-gray-700 hover:text-white">Services</a>
+                        <a href="#"
+                            class="ransition rounded-md px-3 py-2 text-sm font-medium text-gray-300 duration-150 ease-in-out hover:bg-gray-700 hover:text-white">Contact</a>
+                        <div dark-mode class="main">
+                            <div class="dark:bg-gray-900 main">
+                                <button class="toggle-button">
+                                    <div class="sun"></div>
+                                    <div class="core"></div>
+                                </button>
+                            </div>
+
+                            <script>
+                                document
+                                    .querySelector(".toggle-button")
+                                    .addEventListener("click", () => {
+                                        const main = document.querySelector(".main");
+                                        main.classList.toggle("light-mode");
+                                        main.classList.toggle("dark-mode");
+                                    });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none"
+                        aria-label="Main menu" aria-expanded="false">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="items-center space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ---------------------------------------------------------------------------------------- Hero Section ----------------------------------------------------------------------------------------- -->
+    <div class="bg-cover bg-no-repeat bg-svg">
+        <div class="grid bg-cover sm:grid-cols-1 md:grid-cols-2 items-center">
+
+            <div class=" flex h-auto flex-col" id="heading">
+                <div class="m-4">
+                    <h3 class="text-left text-7xl font-bold text-white">Our Services</h3>
+                    <p class="text-left text-xl font-semibold text-white ml-2">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Nulla reprehenderit temporibus nihil quasi ut fugit!</p>
+                </div>
+            </div>
+
+            <div class="m-4 row-span-2 flex border-spacing-y-0.5 items-center justify-center rounded-xl border-slate-800"
+                id="img">
+
+                <div class="w-full sm:w-96 rounded-2xl">
+                    <img src="/src/images/service-hero.png" alt="" class="h-auto w-full rounded-2xl" />
+                </div>
+
+            </div>
+
+            <div id="outer card">
+                <div
+                    class="group relative select-none m-4 h-auto rounded-3xl shadow transition ease-in hover:-translate-y-2 hover:bg-indigo-600 hover:shadow-xl">
+                    <div
+                        class="text ease lg:h-48 md:h-auto sm:h-auto rounded-2xl bg-white text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+                        <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+                        <p class=" p-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid select-none gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div
+                class="group relative m-4 h-auto rounded-3xl transition ease-in hover:shadow-xl shadow hover:-translate-y-2 bg-indigo-600">
+                <div
+                    class="text ease lg:h-48 md:h-auto sm:h-auto rounded-2xl bg-white text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+                    <h3 class="p-4 text-start text-2xl font-extrabold">
+                        Web Development
+                    </h3>
+                    <p class=" p-4 text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                        obcaecati eligendi perspiciatis optio tenetur quidem sed sint
+                        iusto fuga esse.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="group relative m-4 h-auto rounded-3xl transition ease-in hover:shadow-xl shadow hover:-translate-y-2 bg-indigo-600 lg:col-span-2">
+                <div
+                    class="text ease lg:h-48 md:h-auto sm:h-auto rounded-2xl bg-white text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+                    <h3 class="p-4 text-start text-2xl font-extrabold">
+                        Web Development
+                    </h3>
+                    <p class=" p-4 text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                        obcaecati eligendi perspiciatis optio tenetur quidem sed sint
+                        iusto fuga esse.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="group relative m-4 h-auto rounded-3xl transition ease-in hover:shadow-xl shadow hover:-translate-y-2 bg-indigo-600 lg:col-span-2">
+                <div
+                    class="text ease lg:h-48 md:h-auto sm:h-auto rounded-2xl bg-white text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+                    <h3 class="p-4 text-start text-2xl font-extrabold">
+                        Web Development
+                    </h3>
+                    <p class="pl-4 p-4 text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                        obcaecati eligendi perspiciatis optio tenetur quidem sed sint
+                        iusto fuga esse.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group relative m-4 h-auto rounded-3xl transition ease-in hover:shadow-xl shadow hover:-translate-y-2 bg-indigo-600">
+                <div
+                    class="text ease lg:h-48 md:h-auto sm:h-auto rounded-2xl bg-white text-center text-indigo-500 transition-colors delay-75 hover:bg-red-500 hover:text-white">
+                    <h3 class="p-4 text-start text-2xl font-extrabold">
+                        Web Development
+                    </h3>
+                    <p class=" p-4 text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                        obcaecati eligendi perspiciatis optio tenetur quidem sed sint
+                        iusto fuga esse.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient-to-r from-indigo-500 to-white w-screen h-2"></div>
+    </div>
+    <!-- ------------------------------------------------------------------------------ Detailed Overview Of The Services ------------------------------------------------------------------------------ -->
+    <div class="p-4">
+        <div class="container">
+            <h2 class="text-3xl text-white font-bold mb-6">Service Section</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Website Design and Development</h3>
+                    <p class="text-gray-700">Our expert team of designers and developers will create a visually stunning
+                        and user-friendly website tailored to your specific needs. Using the latest web technologies and
+                        best practices, we ensure that your website is modern, responsive, and optimized for
+                        performance.</p>
+                    <ul class="mt-4">
+                        <li>Customized website design</li>
+                        <li>Responsive and mobile-friendly development</li>
+                        <li>E-commerce integration</li>
+                        <li>Content management system (CMS) implementation</li>
+                        <li>Search engine optimization (SEO)</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Digital Marketing Strategy</h3>
+                    <p class="text-gray-700">With our comprehensive digital marketing strategies, we help businesses
+                        achieve their online goals. From search engine optimization (SEO) and social media marketing to
+                        content creation and email campaigns, we develop tailored strategies that drive traffic,
+                        increase brand visibility, and generate leads.</p>
+                    <ul class="mt-4">
+                        <li>Keyword research and analysis</li>
+                        <li>Social media management</li>
+                        <li>Pay-per-click (PPC) advertising</li>
+                        <li>Conversion rate optimization (CRO)</li>
+                        <li>Email marketing campaigns</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Graphic Design Services</h3>
+                    <p class="text-gray-700">Our skilled graphic designers create captivating visual assets that enhance
+                        your brand identity. Whether it's designing logos, brochures, or social media graphics, we
+                        ensure that each design is unique, on-brand, and visually appealing to effectively communicate
+                        your message to your target audience.</p>
+                    <ul class="mt-4">
+                        <li>Logo design and branding</li>
+                        <li>Print and digital collateral design</li>
+                        <li>Infographics and illustrations</li>
+                        <li>Social media graphics</li>
+                        <li>Packaging design</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Mobile App Development</h3>
+                    <p class="text-gray-700">We specialize in developing high-quality mobile applications for iOS and
+                        Android platforms. From conceptualization to deployment, our experienced app developers work
+                        closely with you to create intuitive, feature-rich apps that provide a seamless user experience
+                        and drive user engagement.</p>
+                    <ul class="mt-4">
+                        <li>Native app development</li>
+                        <li>UI/UX design</li>
+                        <li>Integration with backend systems</li>
+                        <li>In-app purchases and payment gateways</li>
+                        <li>App store submission and management</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">E-commerce Solutions</h3>
+                    <p class="text-gray-700">We offer end-to-end e-commerce solutions to help businesses establish and
+                        grow their online stores. Our team develops secure and scalable e-commerce websites, integrates
+                        payment gateways, and implements effective inventory management and order processing systems to
+                        streamline your online business operations.</p>
+                    <ul class="mt-4">
+                        <li>E-commerce website development</li>
+                        <li>Shopping cart and payment gateway integration</li>
+                        <li>Inventory management system</li>
+                        <li>Order processing and fulfillment</li>
+                        <li>Customer management and support</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-gradient-to-r from-white to-indigo-500 w-screen h-2"></div>
+
+    <!-- ----------------------------------------------------------------------------------------- Java Script ----------------------------------------------------------------------------------------- -->
+    <script>
+        const button = document.getElementById("mobile-menu-button");
+        const menu = document.getElementById("mobile-menu");
+
+        button.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+    <script>
+        document.querySelector(".toggle-button").addEventListener("click", () => {
+            const main = document.querySelector(".main");
+            main.toggleAttribute("light-mode");
+            main.toggleAttribute("dark-mode");
+        });
+    </script>
+    <style>
+        #toggle-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .rotate12 {
+            transform: rotate(180deg);
+        }
+
+        body {
+            transition: dark 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        s;
+        // JavaScript code
+        function toggleTheme() {
+            const body = document.querySelector("body");
+            const toggleIcon = document.querySelector("#toggle-icon");
+            const toggleText = document.querySelector("#toggle-text");
+
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                toggleIcon.classList.remove("fa-moon");
+                toggleIcon.classList.add("fa-sun");
+                toggleIcon.classList.add("rotate12");
+            } else {
+                toggleIcon.classList.remove("fa-sun");
+                toggleIcon.classList.add("fa-moon");
+                toggleIcon.classList.remove("rotate12");
+            }
+        }
+    </script>
+    <!-- Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // Initialize the left swiper instance
+        var leftSwiper = new Swiper(".mySwiper", {
+            direction: "horizontal",
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0, // set spaceBetween to 0
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+        // Initialize the right swiper instance
+        var rightSwiper = new Swiper(".mySwiper2", {
+            direction: "horizontal",
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0, // set spaceBetween to 0
+            navigation: {
+                nextEl: ".swiper-button-next-2",
+                prevEl: ".swiper-button-prev-2",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- ------------------------------------------------------------------------------------------- Footer -------------------------------------------------------------------------------------------- -->
+    <footer class="bg-gray-800 py-20">
+        <div class="container mx-auto px-4">
+            <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-12">
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Features</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Cool
+                                stuff</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Random
+                                feature</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Team
+                                feature</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Stuff
+                                for developers</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Another
+                                one</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Last
+                                time</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Resources</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Resource</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Resource
+                                name</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Another
+                                resource</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Final
+                                resource</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">About</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Team</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Locations</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Privacy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Help</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Support</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Help
+                                Center</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Subscribe</h5>
+                    <p class="mb-6 text-gray-400">
+                        Get the latest news and articles delivered straight to your inbox.
+                    </p>
+                    <form action="#">
+                        <div class="mb-3 sm:flex">
+                            <input type="email"
+                                class="px-4 py-2 bg-gray-900 text-gray-100 border border-gray-800 rounded-lg mb-2 sm:mb-0 sm:mr-2 focus:border-indigo-500 focus:outline-none"
+                                placeholder="Enter your email address" />
+                            <button
+                                class="px-4 py-2 bg-indigo-500 text-gray-100 border border-indigo-500 rounded-lg hover:bg-gray-900 hover:text-white">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="border-t border-gray-800 pt-8 pb-8 sm:flex sm:justify-between">
+                <p class="text-gray-400 text-sm mb-6 sm:mb-0">
+                    © 2023 Aman's Den. All Rights Reserved.
+                </p>
+                <div class="text-gray-400 text-sm">
+                    <a href="#" class="hover:text-gray-200 mr-4">Terms</a>
+                    <a href="#" class="hover:text-gray-200">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

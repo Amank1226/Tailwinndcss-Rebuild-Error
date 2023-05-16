@@ -1,0 +1,15 @@
+<div dark-mode class="main">
+  <button class="toggle-button">
+    <div class="sun"></div>
+    <div class="core"></div>
+  </button>
+</div>
+
+
+<script>
+  document.querySelector('.toggle-button').addEventListener('click', () => {
+    const main = document.querySelector('.main')
+    main.toggleAttribute('light-mode')
+    main.toggleAttribute('dark-mode')
+  })
+</script>

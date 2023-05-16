@@ -1,0 +1,67 @@
+{
+    "indentRainbow.indicatorStyle": "classic",
+    "blockhighlight.background": [
+
+        "200",
+        "100",
+        "255",
+        ".0.5"
+    ],
+    "comment-divider.length": 200,
+    "comment-divider.lineFiller": "?",
+    "comment-divider.mainHeaderTransform": "titlecase",
+    "comment-divider.languagesMap": {
+
+    },
+    "better-comments.tags": [
+
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "-",
+            "color": "#ffffff",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#0095ff",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "better-comments.highlightPlainText": true,
+    "comment-divider.mainHeaderHeight": "line",
+    "liveServer.settings.port": 5501
+}
